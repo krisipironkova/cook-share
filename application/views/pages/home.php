@@ -6,7 +6,7 @@
 		<meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">	
 
-		<title>Cook&Share</title>	
+		<title>Cook-Share</title>	
 
 		<meta name="keywords" content="HTML5 Template" />
 		<meta name="description" content="Porto - Responsive HTML5 Template">
@@ -28,6 +28,8 @@
 		<link rel="stylesheet" href="<?php echo base_url()?>assets/vendor/owlcarousel/owl.carousel.min.css" media="screen">
 		<link rel="stylesheet" href="<?php echo base_url()?>assets/vendor/owlcarousel/owl.theme.default.min.css" media="screen">
 		<link rel="stylesheet" href="<?php echo base_url()?>assets/vendor/magnific-popup/magnific-popup.css" media="screen">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
 
 		<!-- Theme CSS -->
 		<link rel="stylesheet" href="<?php echo base_url()?>assets/css/theme.css">
@@ -35,8 +37,6 @@
 		<link rel="stylesheet" href="<?php echo base_url()?>assets/css/theme-blog.css">
 		<link rel="stylesheet" href="<?php echo base_url()?>assets/css/theme-shop.css">
 		<link rel="stylesheet" href="<?php echo base_url()?>assets/css/theme-animate.css">
-		<link rel="stylesheet" href="<?php echo base_url()?>assets/css/home_page.css">
-        <link rel="stylesheet" href="<?php echo base_url()?>assets/css/morris.css">
 
 		<!-- Current Page CSS -->
 		<link rel="stylesheet" href="<?php echo base_url()?>assets/vendor/rs-plugin/css/settings.css" media="screen">
@@ -67,7 +67,7 @@
 				<div class="container">
 					<div class="logo">
 						<a href="<?php echo base_url(); ?>">
-							<img alt="Porto" width="111" height="54" data-sticky-width="82" data-sticky-height="40" src="<?php echo base_url()?>assets/img/logos/logo.png">
+							<img alt="Porto" width="111" height="54" data-sticky-width="82" data-sticky-height="40" src="<?php echo base_url()?>assets/img/logo.png">
 						</a>
 					</div>
 					<nav class="nav-top">
@@ -140,7 +140,7 @@
 									 data-y="180"
 									 data-speed="300"
 									 data-start="1000"
-									 data-easing="easeOutExpo"><img src="img/slides/slide-title-border.png" alt=""></div>
+									 data-easing="easeOutExpo"><img src="<?php echo base_url()?>assets/img/slides/slide-title-border.png" alt=""></div>
 				
 								<div class="tp-caption main-label sft stb"
 									 data-x="135"
@@ -161,35 +161,35 @@
 									 data-y="248"
 									 data-speed="500"
 									 data-start="2500"
-									 data-easing="easeOutBack"><img src="img/slides/slide-concept-2-1.png" alt=""></div>
+									 data-easing="easeOutBack"><img src="<?php echo base_url()?>assets/img/slides/slide-concept-2-1.png" alt=""></div>
 				
 								<div class="tp-caption sfb"
 									 data-x="955"
 									 data-y="200"
 									 data-speed="400"
 									 data-start="3000"
-									 data-easing="easeOutBack"><img src="img/slides/slide-concept-2-2.png" alt=""></div>
+									 data-easing="easeOutBack"><img src="<?php echo base_url()?>assets/img/slides/slide-concept-2-2.png" alt=""></div>
 				
 								<div class="tp-caption sfb"
 									 data-x="925"
 									 data-y="170"
 									 data-speed="700"
 									 data-start="3150"
-									 data-easing="easeOutBack"><img src="img/slides/slide-concept-2-3.png" alt=""></div>
+									 data-easing="easeOutBack"><img src="<?php echo base_url()?>assets/img/slides/slide-concept-2-3.png" alt=""></div>
 				
 								<div class="tp-caption sfb"
 									 data-x="875"
 									 data-y="130"
 									 data-speed="1000"
 									 data-start="3250"
-									 data-easing="easeOutBack"><img src="img/slides/slide-concept-2-4.png" alt=""></div>
+									 data-easing="easeOutBack"><img src="<?php echo base_url()?>assets/img/slides/slide-concept-2-4.png" alt=""></div>
 				
 								<div class="tp-caption sfb"
 									 data-x="605"
 									 data-y="80"
 									 data-speed="600"
 									 data-start="3450"
-									 data-easing="easeOutExpo"><img src="img/slides/slide-concept-2-5.png" alt=""></div>
+									 data-easing="easeOutExpo"><img src="<?php echo base_url()?>assets/img/slides/slide-concept-2-5.png" alt=""></div>
 				
 								<div class="tp-caption blackboard-text lfb "
 									 data-x="635"
@@ -214,14 +214,14 @@
 							</li>
 							<li data-transition="fade" data-slotamount="5" data-masterspeed="1000" >
 				
-								<img src="img/slides/slide-bg.jpg" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat" alt="">
+								<img src="<?php echo base_url()?>assets/img/slides/slide-bg.jpg" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat" alt="">
 				
 									<div class="tp-caption sft stb"
 										 data-x="155"
 										 data-y="100"
 										 data-speed="600"
 										 data-start="100"
-										 data-easing="easeOutExpo"><img src="img/slides/slide-concept.png" alt=""></div>
+										 data-easing="easeOutExpo"><img src="<?php echo base_url()?>assets/img/slides/slide-concept.png" alt=""></div>
 				
 									<div class="tp-caption blackboard-text sft stb"
 										 data-x="285"
@@ -722,7 +722,7 @@
 						<div class="row">
 							<div class="col-md-1">
 								<a href="index.html" class="logo">
-									<img alt="Porto Website Template" class="img-responsive" src="img/logo-footer.png">
+									<img alt="Porto Website Template" class="img-responsive" src="<?php echo base_url()?>assets/img/logo-footer.png">
 								</a>
 							</div>
 							<div class="col-md-7">
