@@ -96,12 +96,12 @@
 								</li>
 								<li>
 									<a href="#">
-										About
+										News Feed
 									</a>
 								</li>
 								<li>
 									<a href="#">
-										Contact us
+										Favourites
 									</a>
 								</li>
                                 
@@ -147,14 +147,14 @@
 									 data-y="210"
 									 data-speed="300"
 									 data-start="1500"
-									 data-easing="easeOutExpo">WEB DESIGN?</div>
+									 data-easing="easeOutExpo">INSPIRATION?</div>
 				
 								<div class="tp-caption bottom-label sft stb"
 									 data-x="185"
 									 data-y="280"
 									 data-speed="500"
 									 data-start="2000"
-									 data-easing="easeOutExpo">Check out our options and features.</div>
+									 data-easing="easeOutExpo">Check out the latest cooking ideas.</div>
 				
 								<div class="tp-caption randomrotate"
 									 data-x="905"
@@ -228,29 +228,28 @@
 										 data-y="180"
 										 data-speed="900"
 										 data-start="1000"
-										 data-easing="easeOutExpo" style="font-size: 30px;">easy to</div>
+										 data-easing="easeOutExpo" style="font-size: 20px;">easy to</div>
 				
 									<div class="tp-caption blackboard-text sft stb"
 										 data-x="285"
 										 data-y="220"
 										 data-speed="900"
 										 data-start="1200"
-										 data-easing="easeOutExpo" style="font-size: 40px;">customize!</div>
+										 data-easing="easeOutExpo" style="font-size: 20px;">organaze and share your idea!</div>
 				
 									<div class="tp-caption main-label sft stb"
 										 data-x="685"
 										 data-y="190"
 										 data-speed="300"
 										 data-start="900"
-										 data-easing="easeOutExpo">DESIGN IT!</div>
+										 data-easing="easeOutExpo">COOK IT!</div>
 				
 									<div class="tp-caption bottom-label sft stb"
 										 data-x="685"
 										 data-y="250"
 										 data-speed="500"
 										 data-start="2000"
-										 data-easing="easeOutExpo">Create slides with brushes and fonts.</div>
-				
+										 data-easing="easeOutExpo">Grab the cooking tools, turn the inspiration on</div>
 							</li>
 						</ul>
 					</div>
@@ -261,14 +260,12 @@
 						<div class="row">
 							<div class="col-md-8">
 								<p>
-									The fastest way to grow your business with the leader in <em>Technology</em>
-									<span>Check out our options and features included.</span>
+									Share your experience in the kitchen and <em>inspire</em> others.
 								</p>
 							</div>
 							<div class="col-md-4">
 								<div class="get-started">
 									<a href="#" class="btn btn-lg btn-primary">Get Started Now!</a>
-									<div class="learn-more">or <a href="index.html">learn more.</a></div>
 								</div>
 							</div>
 						</div>
@@ -281,20 +278,20 @@
 					<div class="row center">
 						<div class="col-md-12">
 							<h1 class="mb-sm word-rotator-title">
-								Porto is
+								Cook&Share is
 								<strong class="inverted">
 									<span class="word-rotate" data-plugin-options='{"delay": 2000, "animDelay": 300}'>
 										<span class="word-rotate-items">
-											<span>incredibly</span>
-											<span>especially</span>
-											<span>extremely</span>
+											<span>inspiring</span>
+											<span>tasty</span>
+											<span>helpful</span>
 										</span>
 									</span>
 								</strong>
-								beautiful and fully responsive.
+								app for food lovers and innovators.
 							</h1>
 							<p class="lead">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla vel pellentesque consequat, ante nulla hendrerit arcu, ac tincidunt mauris lacus sed leo. vamus suscipit molestie vestibulum.
+								Make registration so you can make full use of the application. Check out your profile to see what opportunities we offers. Surf through and get inspired. Simply fill a form and share your cooking magic with the world ! 
 							</p>
 						</div>
 					</div>
@@ -310,19 +307,19 @@
 							<div class="col-md-2 col-md-offset-1">
 								<div class="process-image" data-appear-animation="bounceIn">
 									<img src="<?php echo base_url()?>assets/img/home-concept-item-1.png" alt="" />
-									<strong>Strategy</strong>
+									<strong>Registration</strong>
 								</div>
 							</div>
 							<div class="col-md-2">
 								<div class="process-image" data-appear-animation="bounceIn" data-appear-animation-delay="200">
 									<img src="<?php echo base_url()?>assets/img/home-concept-item-2.png" alt="" />
-									<strong>Planning</strong>
+									<strong>Your profile</strong>
 								</div>
 							</div>
 							<div class="col-md-2">
 								<div class="process-image" data-appear-animation="bounceIn" data-appear-animation-delay="400">
 									<img src="<?php echo base_url()?>assets/img/home-concept-item-3.png" alt="" />
-									<strong>Build</strong>
+									<strong>Fill form</strong>
 								</div>
 							</div>
 							<div class="col-md-4 col-md-offset-1">
@@ -334,7 +331,7 @@
 											<li><a href="portfolio-single-project.html"><img class="img-responsive" src="<?php echo base_url()?>assets/img/projects/project-home-3.jpg" alt="" /></a></li>
 										</ul>
 									</div>
-									<strong class="our-work">Our Work</strong>
+									<strong class="our-work">Share</strong>
 								</div>
 							</div>
 						</div>
@@ -342,443 +339,137 @@
 					</div>
 				</div>
 				
-				<div class="container">
-				
-					<div class="row">
-						<hr class="tall">
-					</div>
-				
-				</div>
-				
-				<div class="container">
-				
-					<div class="row">
-						<div class="col-md-8">
-							<h2>Our <strong>Features</strong></h2>
-							<div class="row">
-								<div class="col-sm-6">
-									<div class="feature-box">
-										<div class="feature-box-icon">
-											<i class="fa fa-group"></i>
-										</div>
-										<div class="feature-box-info">
-											<h4 class="heading-primary mb-none">Customer Support</h4>
-											<p class="tall">Lorem ipsum dolor sit amet, consectetur adip.</p>
-										</div>
-									</div>
-									<div class="feature-box">
-										<div class="feature-box-icon">
-											<i class="fa fa-file"></i>
-										</div>
-										<div class="feature-box-info">
-											<h4 class="heading-primary mb-none">HTML5 / CSS3 / JS</h4>
-											<p class="tall">Lorem ipsum dolor sit amet, adip.</p>
-										</div>
-									</div>
-									<div class="feature-box">
-										<div class="feature-box-icon">
-											<i class="fa fa-google-plus"></i>
-										</div>
-										<div class="feature-box-info">
-											<h4 class="heading-primary mb-none">500+ Google Fonts</h4>
-											<p class="tall">Lorem ipsum dolor sit amet, consectetur adip.</p>
-										</div>
-									</div>
-									<div class="feature-box">
-										<div class="feature-box-icon">
-											<i class="fa fa-adjust"></i>
-										</div>
-										<div class="feature-box-info">
-											<h4 class="heading-primary mb-none">Colors</h4>
-											<p class="tall">Lorem ipsum dolor sit amet, consectetur adip.</p>
-										</div>
-									</div>
-								</div>
-								<div class="col-sm-6">
-									<div class="feature-box">
-										<div class="feature-box-icon">
-											<i class="fa fa-film"></i>
-										</div>
-										<div class="feature-box-info">
-											<h4 class="heading-primary mb-none">Sliders</h4>
-											<p class="tall">Lorem ipsum dolor sit amet, consectetur.</p>
-										</div>
-									</div>
-									<div class="feature-box">
-										<div class="feature-box-icon">
-											<i class="fa fa-user"></i>
-										</div>
-										<div class="feature-box-info">
-											<h4 class="heading-primary mb-none">Icons</h4>
-											<p class="tall">Lorem ipsum dolor sit amet, consectetur adip.</p>
-										</div>
-									</div>
-									<div class="feature-box">
-										<div class="feature-box-icon">
-											<i class="fa fa-bars"></i>
-										</div>
-										<div class="feature-box-info">
-											<h4 class="heading-primary mb-none">Buttons</h4>
-											<p class="tall">Lorem ipsum dolor sit, consectetur adip.</p>
-										</div>
-									</div>
-									<div class="feature-box">
-										<div class="feature-box-icon">
-											<i class="fa fa-desktop"></i>
-										</div>
-										<div class="feature-box-info">
-											<h4 class="heading-primary mb-none">Lightbox</h4>
-											<p class="tall">Lorem sit amet, consectetur adip.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<h2>and more...</h2>
-				
-							<div class="panel-group" id="accordion">
-								<div class="panel panel-default">
-									<div class="panel-heading">
-										<h4 class="panel-title">
-											<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-												<i class="fa fa-usd"></i>
-												Pricing Tables
-											</a>
-										</h4>
-									</div>
-									<div id="collapseOne" class="accordion-body collapse in">
-										<div class="panel-body">
-											Donec tellus massa, tristique sit amet condim vel, facilisis quis sapien. Praesent id enim sit amet odio vulputate eleifend in in tortor.
-										</div>
-									</div>
-								</div>
-								<div class="panel panel-default">
-									<div class="panel-heading">
-										<h4 class="panel-title">
-											<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-												<i class="fa fa-comment"></i>
-												Contact Forms
-											</a>
-										</h4>
-									</div>
-									<div id="collapseTwo" class="accordion-body collapse">
-										<div class="panel-body">
-											Donec tellus massa, tristique sit amet condimentum vel, facilisis quis sapien.
-										</div>
-									</div>
-								</div>
-								<div class="panel panel-default">
-									<div class="panel-heading">
-										<h4 class="panel-title">
-											<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-												<i class="fa fa-laptop"></i>
-												Portfolio Pages
-											</a>
-										</h4>
-									</div>
-									<div id="collapseThree" class="accordion-body collapse">
-										<div class="panel-body">
-											Donec tellus massa, tristique sit amet condimentum vel, facilisis quis sapien.
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				
-					<hr class="tall">
-				
-					<div class="row center">
-						<div class="col-md-12">
-							<h2 class="mb-sm word-rotator-title">
-								We're not the only ones
-								<strong>
-									<span class="word-rotate" data-plugin-options='{"delay": 3500, "animDelay": 400}'>
-										<span class="word-rotate-items">
-											<span>excited</span>
-											<span>happy</span>
-										</span>
-									</span>
-								</strong>
-								about Porto Template...
-							</h2>
-							<h4 class="heading-primary lead tall">5,500 customers in 100 countries use Porto Template. Meet our customers.</h4>
-						</div>
-					</div>
-				
-					<div class="row center">
-						<div class="owl-carousel" data-plugin-options='{"items": 6, "autoplay": true, "autoplayTimeout": 3000}'>
-							<div>
-								<img class="img-responsive" src="<?php echo base_url()?>assets/img/logos/logo-1.png" alt="">
-							</div>
-							<div>
-								<img class="img-responsive" src="<?php echo base_url()?>assets/img/logos/logo-2.png" alt="">
-							</div>
-							<div>
-								<img class="img-responsive" src="<?php echo base_url()?>assets/img/logos/logo-3.png" alt="">
-							</div>
-							<div>
-								<img class="img-responsive" src="<?php echo base_url()?>assets/img/logos/logo-4.png" alt="">
-							</div>
-							<div>
-								<img class="img-responsive" src="<?php echo base_url()?>assets/img/logos/logo-5.png" alt="">
-							</div>
-							<div>
-								<img class="img-responsive" src="<?php echo base_url()?>assets/img/logos/logo-6.png" alt="">
-							</div>
-							<div>
-								<img class="img-responsive" src="<?php echo base_url()?>assets/img/logos/logo-4.png" alt="">
-							</div>
-							<div>
-								<img class="img-responsive" src="<?php echo base_url()?>assets/img/logos/logo-2.png" alt="">
-							</div>
-						</div>
-					</div>
-				
-				</div>
-				
-				<section class="section section-custom-map">
-					<section class="section section-default section-footer">
-						<div class="container">
-							<div class="row">
-								<div class="col-md-6">
-									<div class="recent-posts mb-xl">
-										<h2>Latest <strong>Blog</strong> Posts</h2>
-										<div class="row">
-											<div class="owl-carousel mb-none" data-plugin-options='{"items": 1}'>
-												<div>
-													<div class="col-md-6">
-														<article>
-															<div class="date">
-																<span class="day">15</span>
-																<span class="month">Jan</span>
-															</div>
-															<h4 class="heading-primary"><a href="blog-post.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
-															<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit vehicula est, in consequat libero. <a href="/" class="read-more">read more <i class="fa fa-angle-right"></i></a></p>
-														</article>
-													</div>
-													<div class="col-md-6">
-														<article>
-															<div class="date">
-																<span class="day">15</span>
-																<span class="month">Jan</span>
-															</div>
-															<h4 class="heading-primary"><a href="blog-post.html">Lorem ipsum dolor</a></h4>
-															<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit vehicula est, in consequat. <a href="/" class="read-more">read more <i class="fa fa-angle-right"></i></a></p>
-														</article>
-													</div>
-												</div>
-												<div>
-													<div class="col-md-6">
-														<article>
-															<div class="date">
-																<span class="day">12</span>
-																<span class="month">Jan</span>
-															</div>
-															<h4 class="heading-primary"><a href="blog-post.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
-															<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit vehicula est, in consequat libero. <a href="/" class="read-more">read more <i class="fa fa-angle-right"></i></a></p>
-														</article>
-													</div>
-													<div class="col-md-6">
-														<article>
-															<div class="date">
-																<span class="day">11</span>
-																<span class="month">Jan</span>
-															</div>
-															<h4 class="heading-primary"><a href="blog-post.html">Lorem ipsum dolor</a></h4>
-															<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a href="/" class="read-more">read more <i class="fa fa-angle-right"></i></a></p>
-														</article>
-													</div>
-												</div>
-												<div>
-													<div class="col-md-6">
-														<article>
-															<div class="date">
-																<span class="day">15</span>
-																<span class="month">Jan</span>
-															</div>
-															<h4 class="heading-primary"><a href="blog-post.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
-															<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit vehicula est, in consequat libero. <a href="/" class="read-more">read more <i class="fa fa-angle-right"></i></a></p>
-														</article>
-													</div>
-													<div class="col-md-6">
-														<article>
-															<div class="date">
-																<span class="day">15</span>
-																<span class="month">Jan</span>
-															</div>
-															<h4 class="heading-primary"><a href="blog-post.html">Lorem ipsum dolor</a></h4>
-															<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit vehicula est, in consequat. <a href="/" class="read-more">read more <i class="fa fa-angle-right"></i></a></p>
-														</article>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6">
-									<h2><strong>What</strong> Client’s Say</h2>
-									<div class="row">
-										<div class="owl-carousel mb-none" data-plugin-options='{"items": 1}'>
-											<div>
-												<div class="col-md-12">
-													<div class="testimonial testimonial-primary">
-														<blockquote>
-															<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit vehicula est, in consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit vehicula est, in consequat.  Donec hendrerit vehicula est, in consequat.  Donec hendrerit vehicula est, in consequat.</p>
-														</blockquote>
-														<div class="testimonial-arrow-down"></div>
-														<div class="testimonial-author">
-															<div class="testimonial-author-thumbnail img-thumbnail">
-																<img src="<?php echo base_url()?>assets/img/clients/client-1.jpg" alt="">
-															</div>
-															<p><strong>John Smith</strong><span>CEO & Founder - Okler</span></p>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div>
-												<div class="col-md-12">
-													<div class="testimonial testimonial-primary">
-														<blockquote>
-															<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit vehicula est, in consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit vehicula est, in consequat.</p>
-														</blockquote>
-														<div class="testimonial-arrow-down"></div>
-														<div class="testimonial-author">
-															<div class="testimonial-author-thumbnail img-thumbnail">
-																<img src="<?php echo base_url()?>assets/img/clients/client-1.jpg" alt="">
-															</div>
-															<p><strong>John Smith</strong><span>CEO & Founder - Okler</span></p>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</section>
-				</section>
+				<hr class="tall">
 			</div>
- 
-			<footer id="footer">
-				<div class="container">
-					<div class="row">
-						<div class="footer-ribbon">
-							<span>Get in Touch</span>
-						</div>
-						<div class="col-md-3">
-							<div class="newsletter">
-								<h4 class="heading-primary">Newsletter</h4>
-								<p>Keep up on our always evolving product features and technology. Enter your e-mail and subscribe to our newsletter.</p>
 			
-								<div class="alert alert-success hidden" id="newsletterSuccess">
-									<strong>Success!</strong> You've been added to our email list.
-								</div>
-			
-								<div class="alert alert-danger hidden" id="newsletterError"></div>
-			
-								<form id="newsletterForm" action="php/newsletter-subscribe.php" method="POST">
-									<div class="input-group">
-										<input class="form-control" placeholder="Email Address" name="newsletterEmail" id="newsletterEmail" type="text">
-										<span class="input-group-btn">
-											<button class="btn btn-default" type="submit">Go!</button>
-										</span>
-									</div>
-								</form>
-							</div>
-						</div>
-						<div class="col-md-3">
-							<h4 class="heading-primary">Latest Tweets</h4>
-							<div id="tweet" class="twitter" data-plugin-tweets data-plugin-options='{"username": "", "count": 2}'>
-								<p>Please wait...</p>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="contact-details">
-								<h4 class="heading-primary">Contact Us</h4>
-								<ul class="contact">
-									<li><p><i class="fa fa-map-marker"></i> <strong>Address:</strong> 1234 Street Name, City Name, United States</p></li>
-									<li><p><i class="fa fa-phone"></i> <strong>Phone:</strong> (123) 456-7890</p></li>
-									<li><p><i class="fa fa-envelope"></i> <strong>Email:</strong> <a href="mailto:mail@example.com">mail@example.com</a></p></li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-md-2">
-							<h4 class="heading-primary">Follow Us</h4>
-							<div class="social-icons">
-								<ul class="social-icons">
-									<li class="facebook"><a href="http://www.facebook.com/" target="_blank" data-placement="bottom" data-tooltip title="Facebook">Facebook</a></li>
-									<li class="twitter"><a href="http://www.twitter.com/" target="_blank" data-placement="bottom" data-tooltip title="Twitter">Twitter</a></li>
-									<li class="linkedin"><a href="http://www.linkedin.com/" target="_blank" data-placement="bottom" data-tooltip title="Linkedin">Linkedin</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="footer-copyright">
+			<section class="section section-custom-map">
+				<section class="section section-default section-footer">
 					<div class="container">
 						<div class="row">
-							<div class="col-md-1">
-								<a href="index.html" class="logo">
-									<img alt="Porto Website Template" class="img-responsive" src="<?php echo base_url()?>assets/img/logo-footer.png">
-								</a>
-							</div>
-							<div class="col-md-7">
-								<p>© Copyright 2015. All Rights Reserved.</p>
-							</div>
-							<div class="col-md-4">
-								<nav id="sub-menu">
-									<ul>
-										<li><a href="page-faq.html">FAQ's</a></li>
-										<li><a href="sitemap.html">Sitemap</a></li>
-										<li><a href="contact-us.html">Contact</a></li>
-									</ul>
-								</nav>
+							<div class="col-md-12">
+								<div class="recent-posts mb-xl">
+								<div class="row center">
+									<div class="col-md-12">
+										<h2 class="mb-sm word-rotator-title">
+											Something
+											<strong>
+												<span class="word-rotate" data-plugin-options='{"delay": 3500, "animDelay": 400}'>
+													<span class="word-rotate-items">
+														<span> tasty </span>
+														<span> spacy </span>
+														<span> new </span>
+													</span>
+												</span>
+											</strong>
+											for you !
+										</h2>
+										<h4 class="heading-primary lead tall">Latest recipes</h4>
+									</div>
+								</div>
+								
 							</div>
 						</div>
 					</div>
+					<div class="row center">
+					<div class="owl-carousel" data-plugin-options='{"items": 6, "autoplay": true, "autoplayTimeout": 2000}'>
+						<div>
+							<img class="img-responsive latest" src="<?php echo base_url()?>assets/img/burger.jpg" alt="">
+						</div>
+						<div>
+							<img class="img-responsive latest" src="<?php echo base_url()?>assets/img/tortilla.jpg" alt="">
+						</div>
+						<div>
+							<img class="img-responsive latest" src="<?php echo base_url()?>assets/img/fish.jpg" alt="">
+						</div>
+						<div>
+							<img class="img-responsive latest" src="<?php echo base_url()?>assets/img/pasta.jpg" alt="">
+						</div>
+						<div>
+							<img class="img-responsive latest" src="<?php echo base_url()?>assets/img/suffle.jpg" alt="">
+						</div>
+						<div>
+							<img class="img-responsive latest" src="<?php echo base_url()?>assets/img/meat.jpg" alt="">
+						</div>
+					</div>
 				</div>
-			</footer>
+				</section>
+			</section>
 		</div>
 
-		<!-- Vendor -->
-		<!--[if lt IE 9]>
-		<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-		<![endif]-->
-		<!--[if gte IE 9]><!-->
-		<script src="<?php echo base_url()?>assets/vendor/jquery/jquery.js"></script>
-		<!--<![endif]-->
-		<script src="<?php echo base_url()?>assets/vendor/jquery.appear/jquery.appear.js"></script>
-		<script src="<?php echo base_url()?>assets/vendor/jquery.easing/jquery.easing.js"></script>
-		<script src="<?php echo base_url()?>assets/vendor/jquery-cookie/jquery-cookie.js"></script>
-		<script src="<?php echo base_url()?>assets/vendor/bootstrap/bootstrap.js"></script>
-		<script src="<?php echo base_url()?>assets/vendor/common/common.js"></script>
-		<script src="<?php echo base_url()?>assets/vendor/jquery.validation/jquery.validation.js"></script>
-		<script src="<?php echo base_url()?>assets/vendor/jquery.stellar/jquery.stellar.js"></script>
-		<script src="<?php echo base_url()?>assets/vendor/jquery.easy-pie-chart/jquery.easy-pie-chart.js"></script>
-		<script src="<?php echo base_url()?>assets/vendor/jquery.gmap/jquery.gmap.js"></script>
-		<script src="<?php echo base_url()?>assets/vendor/isotope/jquery.isotope.js"></script>
-		<script src="<?php echo base_url()?>assets/vendor/owlcarousel/owl.carousel.js"></script>
-		<script src="<?php echo base_url()?>assets/vendor/jflickrfeed/jflickrfeed.js"></script>
-		<script src="<?php echo base_url()?>assets/vendor/magnific-popup/jquery.magnific-popup.js"></script>
-		<script src="<?php echo base_url()?>assets/vendor/vide/vide.js"></script>
-		
-		<!-- Theme Base, Components and Settings -->
-		<script src="<?php echo base_url()?>assets/js/theme.js"></script>
-		
-		<!-- Specific Page Vendor and Views -->
-		<script src="<?php echo base_url()?>assets/vendor/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
-		<script src="<?php echo base_url()?>assets/vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-		<script src="<?php echo base_url()?>assets/vendor/circle-flip-slideshow/js/jquery.flipshow.js"></script>
-		<script src="<?php echo base_url()?>assets/js/views/view.home.js"></script>
-		
-		<!-- Theme Custom -->
-		<script src="<?php echo base_url()?>assets/js/custom.js"></script>
-		
-		<!-- Theme Initialization Files -->
-		<script src="<?php echo base_url()?>assets/js/theme.init.js"></script>
+		<footer id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="footer-ribbon">
+						<span>Get in Touch</span>
+					</div>
+					<div class="col-md-4">
+						<div class="newsletter">
+							<h4 class="heading-primary">Cook&Share</h4>
+							<p>A funny, entertaiment web app for food lovers and maniacs. With Cook$Share you can easy organize your recipe and share it with all those hungry tummies out there!</p>
+							<p>Copyright &copy; 2016 Cook&Share.</p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="contact-details">
+							<h4 class="heading-primary">Contact Us</h4>
+							<ul class="contact">
+								<li><p><i class="fa fa-map-marker"></i> <strong>Address:</strong> 1234 Street Name, City Name</p></li>
+								<li><p><i class="fa fa-phone"></i> <strong>Phone:</strong> (123) 456-7890</p></li>
+								<li><p><i class="fa fa-envelope"></i> <strong>Email:</strong> <a href="mailto:mail@example.com">mail@example.com</a></p></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<h4 class="heading-primary">Follow Us</h4>
+						<div class="social-icons">
+							<ul class="social-icons">
+								<li class="facebook"><a href="http://www.facebook.com/" target="_blank" data-placement="bottom" data-tooltip title="Facebook">Facebook</a></li>
+								<li class="twitter"><a href="http://www.twitter.com/" target="_blank" data-placement="bottom" data-tooltip title="Twitter">Twitter</a></li>
+								<li class="linkedin"><a href="http://www.linkedin.com/" target="_blank" data-placement="bottom" data-tooltip title="Linkedin">Linkedin</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
 
-	</body>
+	<!-- Vendor -->
+	<!--[if lt IE 9]>
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<![endif]-->
+	<!--[if gte IE 9]><!-->
+	<script src="<?php echo base_url()?>assets/vendor/jquery/jquery.js"></script>
+	<!--<![endif]-->
+	<script src="<?php echo base_url()?>assets/vendor/jquery.appear/jquery.appear.js"></script>
+	<script src="<?php echo base_url()?>assets/vendor/jquery.easing/jquery.easing.js"></script>
+	<script src="<?php echo base_url()?>assets/vendor/jquery-cookie/jquery-cookie.js"></script>
+	<script src="<?php echo base_url()?>assets/vendor/bootstrap/bootstrap.js"></script>
+	<script src="<?php echo base_url()?>assets/vendor/common/common.js"></script>
+	<script src="<?php echo base_url()?>assets/vendor/jquery.validation/jquery.validation.js"></script>
+	<script src="<?php echo base_url()?>assets/vendor/jquery.stellar/jquery.stellar.js"></script>
+	<script src="<?php echo base_url()?>assets/vendor/jquery.easy-pie-chart/jquery.easy-pie-chart.js"></script>
+	<script src="<?php echo base_url()?>assets/vendor/jquery.gmap/jquery.gmap.js"></script>
+	<script src="<?php echo base_url()?>assets/vendor/isotope/jquery.isotope.js"></script>
+	<script src="<?php echo base_url()?>assets/vendor/owlcarousel/owl.carousel.js"></script>
+	<script src="<?php echo base_url()?>assets/vendor/jflickrfeed/jflickrfeed.js"></script>
+	<script src="<?php echo base_url()?>assets/vendor/magnific-popup/jquery.magnific-popup.js"></script>
+	<script src="<?php echo base_url()?>assets/vendor/vide/vide.js"></script>
+	
+	<!-- Theme Base, Components and Settings -->
+	<script src="<?php echo base_url()?>assets/js/theme.js"></script>
+	
+	<!-- Specific Page Vendor and Views -->
+	<script src="<?php echo base_url()?>assets/vendor/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+	<script src="<?php echo base_url()?>assets/vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+	<script src="<?php echo base_url()?>assets/vendor/circle-flip-slideshow/js/jquery.flipshow.js"></script>
+	<script src="<?php echo base_url()?>assets/js/views/view.home.js"></script>
+	
+	<!-- Theme Custom -->
+	<script src="<?php echo base_url()?>assets/js/custom.js"></script>
+	
+	<!-- Theme Initialization Files -->
+	<script src="<?php echo base_url()?>assets/js/theme.init.js"></script>
+
+</body>
 </html>
