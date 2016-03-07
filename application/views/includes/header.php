@@ -90,12 +90,12 @@
 						<nav class="nav-main mega-menu">
 							<ul class="nav nav-pills nav-main" id="mainMenu">
 								<li>
-									<a href="#">
+									<a href="<?=base_url('pages/home')?>">
 										Home
 									</a>
 								</li>
 								<li>
-									<a href="#">
+									<a href="<?=base_url('recipes')?>">
 										Recipes
 									</a>
 								</li>
