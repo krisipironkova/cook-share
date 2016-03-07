@@ -6,6 +6,6 @@ class Pages extends CI_Controller
 {
     public function home()
     { 
-        $this->load->view('pages/home'); 
+        $this->layout->render('home'); 
     }
 }
