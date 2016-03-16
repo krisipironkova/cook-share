@@ -73,7 +73,7 @@
 					<nav class="nav-top">
 						<ul class="nav nav-pills nav-top">
 							<li>
-								<a href="#"><i class="fa fa-angle-right"></i>Sign up</a>
+								<a href="<?=base_url('users/register')?>"><i class="fa fa-angle-right"></i>Sign up</a>
 							</li>
 							<li>
 								<a href="<?=base_url('users/login')?>"><i class="fa fa-angle-right"></i>Log in</a>
