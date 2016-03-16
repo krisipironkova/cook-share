@@ -76,7 +76,7 @@
 								<a href="#"><i class="fa fa-angle-right"></i>Sign up</a>
 							</li>
 							<li>
-								<a href="#"><i class="fa fa-angle-right"></i>Log in</a>
+								<a href="<?=base_url('users/login')?>"><i class="fa fa-angle-right"></i>Log in</a>
 							</li>
 							
 						</ul>
