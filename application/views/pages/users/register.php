@@ -9,6 +9,9 @@
 										<div class="featured-box featured-box-primary align-left mt-xlg">
 											<div class="box-content">
 												<h4 class="heading-primary text-uppercase mb-md">Register An Account</h4>
+												<form id="register" method="post" action="">
+													<div class="alert alert-success" style="color: green; display: none;"></div>
+													<div class="alert alert-danger" style="color: red; display: none;"></div>
 													<div class="row">
 														<div class="form-group">
 															<div class="col-md-6">
@@ -25,7 +28,7 @@
 														<div class="form-group">
 															<div class="col-md-12">
 																<label>Username</label>
-																<input type="text" name="username_reg" value="" class="form-control input-lg" />
+																<input type="text" name="username" value="" class="form-control input-lg" />
 															</div>
 														</div>
 													</div>
@@ -33,7 +36,7 @@
 														<div class="form-group">
 															<div class="col-md-12">
 																<label>E-mail Address</label>
-																<input type="text" name="email_reg" value="" class="form-control input-lg" />
+																<input type="email" name="email" value="" class="form-control input-lg" />
 															</div>
 														</div>
 													</div>
@@ -54,6 +57,7 @@
 															<input type="submit" value="Register" class="btn btn-primary pull-right mb-xl" data-loading-text="Loading...">
 														</div>
 													</div>
+												</form>
 											</div>
 										</div>
 									</div>
