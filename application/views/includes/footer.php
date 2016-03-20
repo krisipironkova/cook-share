@@ -73,9 +73,13 @@
 	<!-- Theme Initialization Files -->
 	<script src="<?php echo base_url()?>assets/js/theme.init.js"></script>
 
+		<!-- JS Validation -->
+	<script type="text/javascript" src="<?php echo base_url()?>assets/js/jquery.validate.min.js"></script>
+
 	<!-- JS Functions -->
 	<script type="text/javascript" src="<?php echo base_url()?>assets/js/functions/register.js"></script>
 	<script type="text/javascript" src="<?php echo base_url()?>assets/js/functions/login.js"></script>
+
 
 </body>
 </html>

@@ -7,6 +7,7 @@ class User_model extends CI_Model {
 	public function set_user($info){
 
 		unset($info['passconf']);
+		unset($info['submit']);
 		$info['password'] = sha1($info['password']);
 
 		$this->db->insert($this->table, $info);

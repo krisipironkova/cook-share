@@ -9,7 +9,7 @@
 										<div class="featured-box featured-box-primary align-left mt-xlg">
 											<div class="box-content">
 												<h4 class="heading-primary text-uppercase mb-md">Register An Account</h4>
-												<form id="register" method="post" action="">
+												<form id="register" method="post" action="#">
 													<div class="alert alert-success" style="color: green; display: none;"></div>
 													<div class="alert alert-danger" style="color: red; display: none;"></div>
 													<div class="row">
@@ -44,7 +44,7 @@
 														<div class="form-group">
 															<div class="col-md-6">
 																<label>Password</label>
-																<input type="password" name="password" class="form-control input-lg" />
+																<input type="password" name="password" id="password" class="form-control input-lg" />
 															</div>
 															<div class="col-md-6">
 																<label>Confirm Password</label>
@@ -54,7 +54,7 @@
 													</div>
 													<div class="row">
 														<div class="col-md-12">
-															<input type="submit" value="Register" class="btn btn-primary pull-right mb-xl" data-loading-text="Loading...">
+															<button name="submit" id="submitRegister" class="btn btn-primary pull-right mb-xl" data-loading-text="Loading...">Register</button>
 														</div>
 													</div>
 												</form>

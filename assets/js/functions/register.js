@@ -1,18 +1,47 @@
 $(document).ready(function() {
 
-	$('#register').on('submit', function(e) {
-
-		e.preventDefault();
-		// ToDo:
-		// Validation: Check for empty fields, check for valid email, check password length etc.
-
-		if ($('input[name="email"]').val() == '') {
-			$('.alert.alert-danger').css('display', 'block').text('Please type an email!').delay(3000).fadeOut('slow');
-			
-		} else {
+	$('#register').validate({
+		rules: {
+			first_name: "required",
+			last_name: "required",
+			username: {
+				required: true,
+				minlength: 3
+			},
+			email: {
+				required: true,
+				email: true
+			},
+			password: {
+				required: true,
+				minlength: 5
+			},
+			passconf: {
+				required:true,
+				minlength: 5,
+				equalTo: "#password"
+			}
+		},
+		messages: {
+			first_name: "Please enter first name",
+			last_name: "Please enter last name",
+			username: {
+				required: "Please enter a username",
+				minlength: "Your username must consist of at least 3 characters"
+			},
+			password: {
+				required: "Please provide a password",
+				minlength: "Your password must be at least 5 characters long"
+			},
+			passconf: {
+				required: "Please provide a password",
+				equalTo: "Please enter the same password"
+			}
+		},
+		submitHandler: function(form) {
 			$.ajax("http://localhost/cook-share/users/", {
 				method: 'POST',
-				data: $(this).serialize(),
+				data: $(form).serialize(),
 				dataType: 'json',
 				success: function(response) {
 					switch(response.status) {
