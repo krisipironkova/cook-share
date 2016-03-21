@@ -2,7 +2,7 @@
 
 class User_model extends CI_Model {
 	private $table = 'users';
-	private $columns = 'id, username, email';
+	private $columns = 'id, username, email, first_name, last_name';
 
 	public function set_user($info){
 
@@ -23,5 +23,23 @@ class User_model extends CI_Model {
 
 	public function update_user($id, $info) {
 
+	}
+
+	public function check_username($username){
+		$db_username = $this->db->select('username')->where('username', $username)->get($this->table);
+		if($db_username->num_rows() >= 1){
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	public function check_email($email){
+		$db_email = $this->db->select('email')->where('email', $email)->get($this->table);
+		if($db_email->num_rows() == 1){
+			return true;
+		} else {
+			return false;
+		}
 	}
 }
