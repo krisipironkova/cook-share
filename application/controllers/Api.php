@@ -26,18 +26,17 @@ class Api extends REST_Controller {
     }
 
     public function users_post() {    
-        // ToDo: check if user already exists
 
-        
-        if($test = $this->user_model->check_username($this->post('username'))){
-            var_dump($test);
+        if($check_username = $this->user_model->check_username($this->post('username'))){
+            var_dump($check_username);
             $this->response([ 'status' => FALSE, 'message' => 'This username is taken.'], REST_Controller::HTTP_OK);
         } else {
             $this->user_model->set_user($this->post());
             $this->response([ 'status' => TRUE, 'message' => 'User created successfully!'], REST_Controller::HTTP_OK);
         }
 
-        if($this->user_model->check_email($this->post('email'))){
+        if($check_email = $this->user_model->check_email($this->post('email'))){
+            var_dump($check_email);
             $this->response([ 'status' => FALSE, 'message' => 'This email is taken.'], REST_Controller::HTTP_OK);
         } else {
             $this->user_model->set_user($this->post());

@@ -46,10 +46,10 @@ $(document).ready(function() {
 				success: function(response) {
 					switch(response.status) {
 						case true:
-							$('.alert.alert-success').css('display', 'block').text(response.message).delay(3000).fadeOut('slow');
+							$('.alert.alert-success').css('display', 'block').text(response.message);
 							break;
 						case false:
-							 $('.alert.alert-danger').css('display', 'block').text(response.message).delay(3000).fadeOut('slow');
+							 $('.alert.alert-danger').css('display', 'block').text(response.message);
 							break;
 
 					}

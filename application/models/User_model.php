@@ -21,10 +21,6 @@ class User_model extends CI_Model {
 		return $this->db->select($this->columns)->get($this->table)->result();
 	}
 
-	public function update_user($id, $info) {
-
-	}
-
 	public function check_username($username){
 		$db_username = $this->db->select('username')->where('username', $username)->get($this->table);
 		if($db_username->num_rows() >= 1){
@@ -36,7 +32,7 @@ class User_model extends CI_Model {
 
 	public function check_email($email){
 		$db_email = $this->db->select('email')->where('email', $email)->get($this->table);
-		if($db_email->num_rows() == 1){
+		if($db_email->num_rows() >= 1){
 			return true;
 		} else {
 			return false;

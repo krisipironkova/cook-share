@@ -152,7 +152,7 @@
 					</div>
 					<div class="col-md-4">
 						<div class="get-started">
-							<a href="#" class="btn btn-lg btn-primary">Get Started Now!</a>
+							<a href="<?=base_url('users/register')?>" class="btn btn-lg btn-primary">Get Started Now!</a>
 						</div>
 					</div>
 				</div>
@@ -243,7 +243,7 @@
 										<span class="word-rotate" data-plugin-options='{"delay": 3500, "animDelay": 400}'>
 											<span class="word-rotate-items">
 												<span> tasty </span>
-												<span> spacy </span>
+												<span> spicy </span>
 												<span> new </span>
 											</span>
 										</span>
