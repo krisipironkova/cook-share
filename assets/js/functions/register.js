@@ -51,7 +51,6 @@ $(document).ready(function() {
 						case false:
 							 $('.alert.alert-danger').css('display', 'block').text(response.message);
 							break;
-
 					}
 				},
 				error: function(response) {
