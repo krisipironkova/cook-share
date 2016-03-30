@@ -8,6 +8,7 @@ class User_model extends CI_Model {
 
 		unset($info['passconf']);
 		unset($info['submit']);
+		unset($info['type']);
 		$info['password'] = sha1($info['password']);
 
 		$this->db->insert($this->table, $info);
@@ -38,4 +39,19 @@ class User_model extends CI_Model {
 			return false;
 		}
 	}
+
+	public function login($email, $password){
+		$result = $this->db->select('id')->where([
+			'email' => $email, 
+			'password' => sha1($password),
+		])->get($this->table);
+
+		if($result->num_rows() == 1){
+			$this->session->set_userdata(['user_id' => $result->row('id')]);
+			return true;
+		} else {
+			return false;
+		}
+	}
+
 }

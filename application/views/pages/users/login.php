@@ -8,6 +8,8 @@
                     <div class="featured-box featured-box-primary align-left mt-xlg">
                       <div class="box-content login-box">
                         <h4 class="heading-primary text-uppercase mb-md">Login</h4>
+                          <div class="alert alert-success" style="color: green; display: none;"></div>
+                          <div class="alert alert-danger" style="color: red; display: none;"></div>
                           <form id="login" method="post" action="#">
                             <div class="row">
                               <div class="form-group">
