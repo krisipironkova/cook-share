@@ -72,13 +72,24 @@
 					</div>
 					<nav class="nav-top">
 						<ul class="nav nav-pills nav-top">
+						<?php if(isset($user_info->username)): ?>
+							<div class="dropdown">
+								  <button class="btn btn-primary dropdown" type="button" data-toggle="dropdown"><?php echo $user_info->username; ?>
+								  <span class="caret"></span></button>
+								  <ul class="dropdown-menu">
+								    <li><a href="#">View profile</a></li>
+								    <li><a href="#">Settings</a></li>
+								    <li><a href="#">Log out</a></li>
+								  </ul> 
+							</div>
+						<?php else: ?>
 							<li>
 								<a href="<?=base_url('users/register')?>"><i class="fa fa-angle-right"></i>Sign up</a>
 							</li>
 							<li>
 								<a href="<?=base_url('users/login')?>"><i class="fa fa-angle-right"></i>Log in</a>
 							</li>
-							
+						<?php endif; ?>
 						</ul>
 					</nav>
 					<button class="btn btn-responsive-nav btn-inverse" data-toggle="collapse" data-target=".nav-main-collapse">
