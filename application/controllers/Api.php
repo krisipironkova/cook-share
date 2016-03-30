@@ -26,8 +26,6 @@ class Api extends REST_Controller {
     }
 
     public function users_post() {    
-        var_dump($this->post());
-        var_dump($this->post('type'));
         if($test = $this->post('type') === 'register'){
             $this->register($this->post());           
         }elseif ($this->post('type') === 'login'){

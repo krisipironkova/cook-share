@@ -41,7 +41,6 @@ $(document).ready(function() {
 		submitHandler: function(form){
 			var data = $(form).serializeArray();
 			data.push({name: 'type', value: 'register'});
-			console.log(data);
 
 			$.ajax("http://localhost/cook-share/users/", {
 				method: 'POST',
@@ -52,7 +51,7 @@ $(document).ready(function() {
 						case true:
 							$('.alert.alert-success').css('display', 'block').text(response.message);
 							 window.setTimeout(function() {
-							    window.location.href = '/cook-share';
+							    window.location.href = '/cook-share/users/login';
 							}, 1000);
 							break;
 						case false:
@@ -64,6 +63,7 @@ $(document).ready(function() {
 				error: function(response) {
 					console.log(response.status);
 					console.log(response);
+					console.log('error');
 				}
 			});
 		}
