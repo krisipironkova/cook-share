@@ -22,6 +22,10 @@ class User_model extends CI_Model {
 		return $this->db->select($this->columns)->get($this->table)->result();
 	}
 
+	public function get_info(){
+		return $this->db->select($this->columns)->where('id', $this->session->userdata('user_id'))->get($this->table)->first_row();
+	}
+
 	public function check_username($username){
 		$db_username = $this->db->select('username')->where('username', $username)->get($this->table);
 		if($db_username->num_rows() >= 1){
