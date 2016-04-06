@@ -72,14 +72,14 @@
 					</div>
 					<nav class="nav-top">
 						<ul class="nav nav-pills nav-top">
-						<?php if(isset($user_info->username)): ?>
+						<?php if(isset($this->data->username)): ?>
 							<div class="dropdown">
 								  <button class="btn btn-primary dropdown" type="button" data-toggle="dropdown"><?php echo $user_info->username; ?>
 								  <span class="caret"></span></button>
 								  <ul class="dropdown-menu">
-								    <li><a href="#">View profile</a></li>
+								    <li><a href="#">My recipes</a></li>
 								    <li><a href="#">Settings</a></li>
-								    <li><a href="#">Log out</a></li>
+								    <li><a href="<?=base_url('users/logout')?>">Log out</a></li>
 								  </ul> 
 							</div>
 						<?php else: ?>
@@ -108,6 +108,11 @@
 								<li>
 									<a href="<?=base_url('recipes')?>">
 										Recipes
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										My recipes
 									</a>
 								</li>
 								<li>
