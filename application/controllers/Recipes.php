@@ -9,4 +9,12 @@ class Recipes extends CI_Controller
 
     	$this->layout->render('recipes/catalog');
     }
+
+    public function my_recipes(){
+    	$this->layout->render('recipes/my_recipes');
+    }
+
+    public function recipe_form(){
+    	$this->layout->render('recipes/recipe_form');
+    }
 }
