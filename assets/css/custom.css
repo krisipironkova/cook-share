@@ -14,3 +14,9 @@
 	width: 258px;
 	height: 343px;
 }
+
+.form-control {
+	height: auto;
+	padding: 12px 16px;
+	font-size: 18px;
+}

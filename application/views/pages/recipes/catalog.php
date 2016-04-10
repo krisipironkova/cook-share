@@ -1,5 +1,3 @@
-
-<body>
 <div role="main" class="main shop">
 
 	<div class="container">

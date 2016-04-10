@@ -48,8 +48,11 @@
 		<!-- Theme Custom CSS -->
 		<link rel="stylesheet" href="<?php echo base_url()?>assets/css/custom.css">
 
+		<!-- Upload CSS -->
+		<link rel="stylesheet" href="<?php echo base_url()?>assets/css/custom.css">
+		
+
 		<!-- Head Libs -->
-		<script src="<?php echo base_url()?>assets/vendor/modernizr/modernizr.js"></script>
 
 		<!--[if IE]>
 			<link rel="stylesheet" href="css/ie.css">
@@ -111,7 +114,7 @@
 									</a>
 								</li>
 								<li>
-									<a href="#">
+									<a href="<?=base_url('recipes/my_recipes')?>">
 										My recipes
 									</a>
 								</li>
@@ -126,4 +129,3 @@
 					</div>
 				</div>
 			</header>
-	</head>

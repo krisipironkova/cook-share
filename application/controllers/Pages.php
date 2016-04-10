@@ -7,6 +7,6 @@ class Pages extends CI_Controller
     public function home()
     { 
         $this->layout->render('home'); 
-        //var_dump(is_logged_in());
+       // var_dump($this->data);
     }
 }
