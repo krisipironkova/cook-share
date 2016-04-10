@@ -1,9 +1,9 @@
 $(document).ready(function(){
 	$("#recipe_form").validate({
 		rules: {
-			file_source: {
-				required: true
-			},
+			// file_source: {
+			// 	required: true
+			// },
 			description: {
 				required: true,
 				minlength: 1
@@ -36,9 +36,9 @@ $(document).ready(function(){
 				minlength: 1
 			}
 		},messages: {
-			file_source: {
-				required: "No file is chosen"
-			},
+			// file_source: {
+			// 	required: "No file is chosen"
+			// },
 			description: {
 				required: "Please enter a description",
 				minlenght: "Please enter atleast 1 symbol"
@@ -70,6 +70,35 @@ $(document).ready(function(){
 				required: "Please enter ingredients",
 				minlenght: "Please enter atleast 1 symbol"
 			}
+		},
+		submitHandler: function(form){
+			var data = $(form).serializeArray();
+			data.push({name: 'type', value: 'form'});
+		 	console.log(data);
+		 	$.ajax("http://localhost/cook-share/users/", {
+				method: 'POST',
+				data: data,
+				dataType: 'json',
+				success: function(response) {
+					switch(response.status) {
+						case true:
+							$('.alert.alert-success').css('display', 'block').text(response.message);
+							 window.setTimeout(function() {
+							    window.location.href = '/cook-share/recipes/my_recipes';
+							}, 1000);
+							break;
+						case false:
+							 $('.alert.alert-danger').css('display', 'block').text(response.message);
+							break;
+					}
+					console.log(response);
+				},
+				error: function(response) {
+					console.log(response.status);
+					console.log(response);
+					console.log('error');
+				}
+			});
 		}
 	});
 });
