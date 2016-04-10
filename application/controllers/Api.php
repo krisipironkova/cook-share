@@ -30,6 +30,8 @@ class Api extends REST_Controller {
             $this->register($this->post());           
         }elseif ($this->post('type') === 'login'){
             $this->login($this->post());
+        }elseif($this->post('type') === 'form'){
+            $this->set_recipe($this->post());
         }
 
     }
@@ -51,5 +53,10 @@ class Api extends REST_Controller {
         }else{
             $this->response(['status' => TRUE, 'message' => 'Logged in successfully!']);
         }
+    }
+
+    private function set_recipe($post){
+        $this->recipe_model->set_recipe($post);
+        $this->response(['status' => TRUE, 'message' => 'Recipe uploaded successfully!']);
     }
 }
