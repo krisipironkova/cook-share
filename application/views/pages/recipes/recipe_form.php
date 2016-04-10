@@ -16,7 +16,7 @@
     </div>
 
     <div class="row">
-      	<form  action="" method="post" enctype="multipart/form-data" id="js-upload-form">      			   
+      	<form  action="" method="post" enctype="multipart/form-data" id="recipe_form">      			   
 	  		<div class="col-md-6">
 				<div class="form-group">
 					<label for="photo"><strong>Photo</strong></label>
@@ -81,8 +81,8 @@
 	      		</div>
 		      	<div class="row">
 		      		<div class="col-md-12 text-right">
-		      			<button type="submit" name="create" class="btn btn-lg btn-success">Create</button>
-		      			<button type="submit" name="create" class="btn btn-lg btn-danger">Cancel</button>
+		      			<button type="submit" name="submitRecipe" class="btn btn-lg btn-success">Create</button>
+		      			<a href="<?=base_url('recipes/my_recipes')?>"  class="btn btn-lg btn-danger">Cancel</a>
 		      		</div>
 		      	</div>
 		      </div>

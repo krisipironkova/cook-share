@@ -80,8 +80,7 @@
 	<!-- JS Functions -->
 	<script type="text/javascript" src="<?php echo base_url()?>assets/js/functions/register.js"></script>
 	<script type="text/javascript" src="<?php echo base_url()?>assets/js/functions/login.js"></script>
-
-
+	<script type="text/javascript" src="<?php echo base_url()?>assets/js/functions/recipe_form.js"></script>
 
 </body>
 </html>
