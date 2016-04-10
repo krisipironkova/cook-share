@@ -16,19 +16,30 @@
     </div>
 
     <div class="row">
-      	<form>
+      	<form  action="" method="post" enctype="multipart/form-data" id="js-upload-form">      			   
 	  		<div class="col-md-6">
+				<div class="form-group">
+					<label for="photo"><strong>Photo</strong></label>
+					<div style="position:relative;">
+						<a class='btn btn-primary' href='javascript:;'>
+							Choose File...
+							<input type="file" accept="image/*" style='position:absolute;z-index:2;top:0;left:0;filter: alpha(opacity=0);-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";opacity:0;background-color:transparent;color:transparent;' name="file_source" size="40"  onchange='$("#upload-file-info").html($(this).val());'>
+						</a>
+						&nbsp;
+						<span class='label label-info' id="upload-file-info"></span>
+					</div>
+				</div>
+
 	      		<div class="form-group">
 	      			<label for="description"><strong>Description</strong></label>
 	      			<textarea rows="5" class="form-control" name="description" id="description" placeholder="A few words about the recipe..."></textarea>
 	      		</div>
-	      	
 	      		<div class="form-group">
 	      			<label for="directions"><strong>Directions</strong></label>
 	      			<textarea rows="5" class="form-control" name="directions" id="directions" placeholder="Еxplain the steps for preparing the recipe..."></textarea>
 	      		</div>
       		</div>
-
+															<!-- SECOND DIV -->
       		<div class="col-md-6">
 	      		<div class="row">
 		      		<div class="col-md-12">
@@ -64,7 +75,7 @@
 		      		<div class="col-md-12">
 			      		<div class="form-group">
 			      			<label for="ingredients"><strong>Ingredients</strong></label>
-			      			<textarea rows="5" class="form-control" name="ingredients" id="ingredients" placeholder="Enter the necessary ingredients..."></textarea>
+			      			<textarea rows="8" class="form-control" name="ingredients" id="ingredients" placeholder="Enter the necessary ingredients..."></textarea>
 			      		</div>
 		      		</div>
 	      		</div>
