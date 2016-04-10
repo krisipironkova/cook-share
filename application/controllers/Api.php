@@ -56,6 +56,7 @@ class Api extends REST_Controller {
     }
 
     private function set_recipe($post){
+        //var_dump($post);
         $this->recipe_model->set_recipe($post);
         $this->response(['status' => TRUE, 'message' => 'Recipe uploaded successfully!']);
     }

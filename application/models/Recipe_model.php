@@ -9,7 +9,7 @@ class Recipe_model extends CI_Model {
 		$info['user_id'] = $this->session->userdata('user_id');
 		unset($info['type']);
 		unset($info['submitRecipe']);
-
+		//var_dump($info);
 		$this->db->insert($this->table, $info);
 	}
 }
