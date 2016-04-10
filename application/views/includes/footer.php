@@ -42,6 +42,7 @@
 	<![endif]-->
 	<!--[if gte IE 9]><!-->
 	<script src="<?php echo base_url()?>assets/vendor/jquery/jquery.js"></script>
+	<script src="<?php echo base_url()?>assets/vendor/modernizr/modernizr.js"></script>
 	<!--<![endif]-->
 	<script src="<?php echo base_url()?>assets/vendor/jquery.appear/jquery.appear.js"></script>
 	<script src="<?php echo base_url()?>assets/vendor/jquery.easing/jquery.easing.js"></script>

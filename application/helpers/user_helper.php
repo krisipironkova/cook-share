@@ -9,7 +9,5 @@ function is_logged_in(){
 	// if exists
 	if($is_logged_in){
 		return true;
-	}
-
-	return false;
+	} else return false;
 }

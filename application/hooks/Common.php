@@ -13,6 +13,6 @@ class Common{
 
 		if(is_logged_in()){
 			$this->CI->data['user_info'] = $this->CI->user_model->get_info();
-		}
+		} else $this->CI->data['user_info'] = '';
 	}
 }

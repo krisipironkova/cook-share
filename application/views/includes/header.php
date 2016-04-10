@@ -75,7 +75,7 @@
 					</div>
 					<nav class="nav-top">
 						<ul class="nav nav-pills nav-top">
-						<?php if(isset($this->data->username)): ?>
+						<?php if(isset($user_info->username)): ?>
 							<div class="dropdown">
 								  <button class="btn btn-primary dropdown" type="button" data-toggle="dropdown"><?php echo $user_info->username; ?>
 								  <span class="caret"></span></button>
@@ -113,17 +113,18 @@
 										Recipes
 									</a>
 								</li>
-								<li>
-									<a href="<?=base_url('recipes/my_recipes')?>">
-										My recipes
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										Favourites
-									</a>
-								</li>
-                                
+								<?php if(isset($user_info->username)): ?>
+									<li>
+										<a href="<?=base_url('recipes/my_recipes')?>">
+											My recipes
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Favourites
+										</a>
+									</li>
+                                <?php endif; ?>
 							</ul>
 						</nav>
 					</div>
