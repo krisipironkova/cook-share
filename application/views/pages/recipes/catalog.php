@@ -20,7 +20,7 @@
 			<ul class="products product-thumb-info-list" data-plugin-masonry>
 				<li class="col-md-3 col-sm-6 col-xs-12 product">
 					<span class="product-thumb-info catalog-box">
-						<a href="#">
+						<a href="<?=base_url('catalog/recipe_view')?>">
 							<span class="product-thumb-info-image">
 								<span class="product-thumb-info-act">
 									<span class="product-thumb-info-act-left"><em>View</em></span>
