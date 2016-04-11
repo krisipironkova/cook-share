@@ -21,12 +21,13 @@
 	      		</div>
       		</div>
       	</div>
+
 		<div class="row">
 			<ul class="portfolio-list">
 			<?php foreach ($recipes as $recipe): ?>
 				<li class="col-md-2 col-sm-3 col-xs-3 isotope-item websites">
 					<div class="portfolio-item">
-						<a href="#">
+						<a href="<?=base_url('recipes/recipe_view/'.$recipe->id)?>">
 							<span class="thumb-info">
 								<span class="thumb-info-wrapper">
 									<img src="<?php echo base_url()?>assets/img/burger.jpg" class="img-responsive" alt="">

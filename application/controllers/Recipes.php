@@ -7,7 +7,7 @@ class Recipes extends CI_Controller{
 	public $data;
 
     public function index(){
-
+    	$this->data['recipes'] = $this->recipe_model->get_all();
     	$this->layout->render('recipes/catalog');
     }
 
@@ -21,7 +21,8 @@ class Recipes extends CI_Controller{
     	$this->layout->render('recipes/recipe_form');
     }
 
-    public function recipe_view(){
+    public function recipe_view($id){
+
 		$this->layout->render('recipes/recipe_view');
 	}
 }

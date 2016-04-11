@@ -16,4 +16,12 @@ class Recipe_model extends CI_Model {
 	public function get_all(){
 		return $this->db->select($this->columns)->order_by('id', 'desc')->get($this->table)->result();
 	}
+
+	public function exists_recipe($id){
+		$result = $this->db->where('id', $id)->get($this->table);
+
+		if($result->num_rows() == 1){
+			return true;
+		}
+	}
 }
