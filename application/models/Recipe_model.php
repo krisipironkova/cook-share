@@ -24,4 +24,9 @@ class Recipe_model extends CI_Model {
 			return true;
 		}
 	}
+
+	public function get_recipe($id){
+		$recipe = $this->db->where('id', $id)->get($this->table)->row();
+		return $recipe;
+	}
 }

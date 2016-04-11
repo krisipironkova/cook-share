@@ -1,5 +1,4 @@
 <div class="container">
-
 				<div class="row">
 					<div class="col-md-12">
 						<div class="portfolio-title">
@@ -8,7 +7,7 @@
 									<a href="<?=site_url('recipes')?>" data-tooltip data-original-title="Back to catalogue"><i class="fa fa-th"></i></a>
 								</div>
 								<div class="col-md-10 center">
-									<h2 class="mb-none">Title</h2>
+									<h2 class="mb-none"><?php echo $recipe->title ?></h2>
 								</div>
 							</div>
 						</div>
@@ -44,26 +43,28 @@
 							</div>
 						</div>
                         
-						<h4 class="heading-primary">Recipe titile</h4>
-						<p class="mt-xlg">Description</p>
-
+						<h4 class="heading-primary"><?php echo $recipe->title ?></h4>
 						<ul class="portfolio-details">
 							<li>
-								<p><strong>Ingrediants:</strong></p>
-								<p></p>
+								<p><strong>Description:</strong></p>
+								<p><?php echo $recipe->description ?></p>
+							</li>
+							<li>
+								<p><strong>Ingredients:</strong></p>
+								<p><?php echo $recipe->ingredients ?></p>
 							</li>
 							<li>
 								<p><strong>Directions:</strong></p>
-								<p></p>
+								<p><?php echo $recipe->directions ?></p>
 							</li>
 							<li>
-								<p><strong>Preparation time:</strong></p>
+								<p><strong>Preparation time: <?php echo $recipe->prep_time ?></strong></p>
 							</li>
 							<li>
-								<p><strong>Servings:</strong></p>
+								<p><strong>Servings: <?php echo $recipe->servings ?></strong></p>
 							</li>
 							<li>
-								<p><strong>Cals:</strong></p>
+								<p><strong>Cals: <?php echo $recipe->cals ?></strong></p>
 							</li>
 						</ul>
                             <div class="dropdown" style="float:left;margin-right:4px;">

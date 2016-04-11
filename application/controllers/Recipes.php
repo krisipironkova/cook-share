@@ -23,6 +23,7 @@ class Recipes extends CI_Controller{
 
     public function recipe_view($id){
 
+    	$this->data['recipe'] = $this->recipe_model->get_recipe($id);
 		$this->layout->render('recipes/recipe_view');
 	}
 }
