@@ -12,4 +12,8 @@ class Recipe_model extends CI_Model {
 		//var_dump($info);
 		$this->db->insert($this->table, $info);
 	}
+
+	public function get_all(){
+		return $this->db->select($this->columns)->order_by('id', 'desc')->get($this->table)->result();
+	}
 }
