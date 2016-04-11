@@ -12,7 +12,6 @@
 								</div>
 							</div>
 						</div>
-
 						<hr class="tall" />
 					</div>
 				</div>
@@ -74,8 +73,7 @@
                             </div>
                     </div>
 				</div>
-
-            
+            	<hr class="tall" />
 				<h3 class="heading-primary"><i class="fa fa-comments"></i>Comments</h3>
                 <div class="col-md-6">
 					<div class="row">

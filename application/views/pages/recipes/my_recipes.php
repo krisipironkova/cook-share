@@ -1,35 +1,50 @@
 <div role="main" class="main shop">
 
-  <div class="container">
+	<div class="container">
 
-    <div class="row">
-      <div class="col-md-12">
-        <hr class="tall">
-      </div>
-    </div>
+		<div class="row">
+			<div class="col-md-12">
+				<hr class="tall">
+			</div>
+		</div>
 
-    <div class="row">
-      <div class="col-md-12">
-        <h1 class="mb-none"><strong>My Recipes</strong></h1>
-        <p></p>
-      </div>
-    </div>
 
-    <div class="row">
-      <div class="col-md-12">
-        <a href="<?=base_url('recipes/recipe_form')?>" class="btn btn-lg btn-primary">New Recipe</a>
-      </div>
-    </div>
 
-    <div class="row">
-      <div class="col-md-12">
-        <ul class="pagination pull-right">
-          <li><a href="#"><i class="fa fa-chevron-left"></i></a></li>
-          <li class="active"><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#"><i class="fa fa-chevron-right"></i></a></li>
-        </ul>
-      </div>
-    </div>
+      	<div class="row">
+	      	<div class="col-md-4">
+	      		<div class="form-group">
+	      			<h1 class="mb-none"><strong>My Recipes</strong></h1>
+	      		</div>
+	      	</div>
+
+	      	<div class="col-md-8 text-right">
+	      		<div class="form-group">
+	      			<a href="<?=base_url('recipes/recipe_form')?>" class="btn btn-lg btn-primary">New Recipe</a>
+	      		</div>
+      		</div>
+      	</div>
+
+		<div class="row">
+			<ul class="portfolio-list">
+				<li class="col-md-2 col-sm-3 col-xs-3 isotope-item websites">
+					<div class="portfolio-item">
+						<a href="#">
+							<span class="thumb-info">
+								<span class="thumb-info-wrapper">
+									<img src="<?php echo base_url()?>assets/img/burger.jpg" class="img-responsive" alt="">
+									<span class="thumb-info-title">
+										<span class="thumb-info-inner">title</span>
+									</span>
+									<span class="thumb-info-action">
+										<span class="thumb-info-action-icon"><i class="fa fa-link"></i></span>
+									</span>
+								</span>
+							</span>
+						</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
 </div>
+
