@@ -24,7 +24,7 @@
 
 		<div class="row">
 			<ul class="portfolio-list">
-			<?php foreach ($recipes as $recipe): ?>
+			<?php foreach ($my_recipes as $recipe): ?>
 				<li class="col-md-2 col-sm-3 col-xs-3 isotope-item websites">
 					<div class="portfolio-item">
 						<a href="<?=base_url('recipes/recipe_view/'.$recipe->id)?>">

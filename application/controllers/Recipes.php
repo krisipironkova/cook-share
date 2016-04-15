@@ -13,7 +13,8 @@ class Recipes extends CI_Controller{
 
     public function my_recipes(){
 
-    	$this->data['recipes'] = $this->recipe_model->get_all();
+        $id = $this->session->userdata('user_id');
+    	$this->data['my_recipes'] = $this->recipe_model->get_recipes_by_user_id($id);
         $this->layout->render('recipes/my_recipes');
     }
 
