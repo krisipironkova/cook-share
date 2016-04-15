@@ -75,32 +75,33 @@
                     </div>
 				</div>
             	<hr class="tall" />
-				<h3 class="heading-primary"><i class="fa fa-comments"></i>Comments</h3>
-                <div class="col-md-6">
-					<div class="row">
-						<div class="form-group">
+            	<form  action="" method="post" enctype="multipart/form-data" id="comment_form">   
+					<h3 class="heading-primary"><i class="fa fa-comments"></i>Comments</h3>
+	                <div class="col-md-6">
+						<div class="row">
+							<div class="form-group">
+								<div class="col-md-12">
+	                                <textarea rows="5" class="form-control" name="comment" placeholder="Write your comment!"></textarea>
+								</div>
+							</div>
+						</div>
+						<div class="row">
 							<div class="col-md-12">
-                                <textarea rows="5" class="form-control" name="comment" placeholder="Write your comment!"></textarea>
+								 <button type="submit" name="submitComment" class="btn btn-lg btn-primary">Post Comment</button>
+							</div>
+						</div>
+	                </div>	
+					<div class="col-md-6">
+	                    
+						<div class="testimonial testimonial-style-3">
+							<blockquote>
+								<p></p>
+							</blockquote>
+							<div class="testimonial-arrow-down"></div>
+							<div class="testimonial-author">
+	              
 							</div>
 						</div>
 					</div>
-					<div class="row">
-						<div class="col-md-12">
-							 <input value="Post Comment" class="btn btn-primary btn-lg" name="submit_comment" data-loading-text="Loading..." type="submit" />
-						</div>
-					</div>
-                </div>	
-				<div class="col-md-6">
-                    
-					<div class="testimonial testimonial-style-3">
-						<blockquote>
-							<p></p>
-						</blockquote>
-						<div class="testimonial-arrow-down"></div>
-						<div class="testimonial-author">
-              
-						</div>
-					</div>
-
-				</div>
+					</form>
 			</div>
