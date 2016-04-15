@@ -9,12 +9,12 @@ class Recipe_model extends CI_Model {
 		$info['user_id'] = $this->session->userdata('user_id');
 		unset($info['type']);
 		unset($info['submitRecipe']);
-		//var_dump($info);
 		$this->db->insert($this->table, $info);
 	}
 
-	public function get_all(){
-		return $this->db->select($this->columns)->order_by('id', 'desc')->get($this->table)->result();
+	public function get_all($limit = null){
+		// return $this->db->select($this->columns)->order_by('id', 'desc')->get($this->table)->result();
+		return $this->db->select($this->columns)->order_by('id', 'desc')->get($this->table, $limit)->result();
 	}
 
 	public function exists_recipe($id){
@@ -28,5 +28,11 @@ class Recipe_model extends CI_Model {
 	public function get_recipe($id){
 		$recipe = $this->db->where('id', $id)->get($this->table)->row();
 		return $recipe;
+	}
+
+	public function get_recipes_by_id($id){
+		$recipes = $this->db->where('id', $id)->get($this->table)->result();
+		return $recipes;
+		
 	}
 }
