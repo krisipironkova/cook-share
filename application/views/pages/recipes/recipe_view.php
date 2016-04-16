@@ -81,13 +81,14 @@
 						<div class="row">
 							<div class="form-group">
 								<div class="col-md-12">
-	                                <textarea rows="5" class="form-control" name="comment" placeholder="Write your comment!"></textarea>
+									<input type="hidden" name="recipe_id" value="<?php echo $recipe->id ?>" />
+	                                <textarea rows="5" class="form-control" name="data" placeholder="Write your comment!"></textarea>
 								</div>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-md-12">
-								 <button type="submit" name="submitComment" class="btn btn-lg btn-primary">Post Comment</button>
+								 <button type="submit" class="btn btn-lg btn-primary">Post Comment</button>
 							</div>
 						</div>
 	                </div>	

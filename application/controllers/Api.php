@@ -32,6 +32,8 @@ class Api extends REST_Controller {
             $this->login($this->post());
         }elseif($this->post('type') === 'form'){
             $this->set_recipe($this->post());
+        }elseif($this->post('type') === 'comment_form'){
+            $this->set_comment($this->post());
         }
 
     }
@@ -59,5 +61,10 @@ class Api extends REST_Controller {
         //var_dump($post);
         $this->recipe_model->set_recipe($post);
         $this->response(['status' => TRUE, 'message' => 'Recipe uploaded successfully!']);
+    }
+
+    private function set_comment($post){
+        $this->comment_model->set_comment($post);
+        $this->response(['status' => TRUE, 'message' => 'Comment posted successfully!']);
     }
 }
