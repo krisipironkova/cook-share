@@ -19,8 +19,9 @@ class Recipes extends CI_Controller{
     }
 
     public function recipe_form() {
-           if(!is_logged_in()) redirect('users/login');
-    	$this->layout->render('recipes/recipe_form');
+       if(!is_logged_in()) redirect('users/login');
+       $this->load->helper('form');
+	   $this->layout->render('recipes/recipe_form');
     }
 
     public function recipe_view($id) {
@@ -45,6 +46,21 @@ class Recipes extends CI_Controller{
     public function delete_from_favourites($id) {
         $this->favourites_model->delete_from_favourites($id);
         redirect("recipes/recipe_view/{$id}");
+    }
+
+    public function add_recipe() {
+        if ( isset($_FILES['photo']['type']) == 'image/jpeg') {
+            $this->load->helper('string');
+            $new_name = random_string('unique') . '.' . pathinfo($_FILES['photo']['name'], PATHINFO_EXTENSION);
+            move_uploaded_file($_FILES['photo']['tmp_name'], "assets/uploads/{$new_name}");
+            $this->recipe_model->set_recipe($new_name);
+
+            redirect('recipes/my_recipes');
+        } else {
+            $this->data['error'] = 'Wrong photo format';
+
+            $this->recipe_form();
+        }
     }
 
 }

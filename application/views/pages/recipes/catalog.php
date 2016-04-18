@@ -24,7 +24,7 @@
 									<span class="product-thumb-info-act">
 										<span class="product-thumb-info-act-left"><em>View</em></span>
 									</span>
-									<img alt="" class="img-responsive catalog-image" src="<?php echo base_url()?>assets/img/burger.jpg" alt="">
+									<img alt="" class="img-responsive catalog-image" src="<?php echo base_url() . 'assets/uploads/' . $recipe->photo; ?>" alt="">
 								</span>
 							</a>
 							<span class="product-thumb-info-content">

@@ -16,14 +16,18 @@
     </div>
 
     <div class="row">
-      	<form  action="" method="post" enctype="multipart/form-data" id="recipe_form">      			   
+      	<!-- <form action="recipes/add_recipe" method="post" enctype="multipart/form-data" id="recipe_form"> -->
+      	<?php echo form_open_multipart('recipes/add_recipe', [ 'id' => 'recipe_form' ]);?>			   
 	  		<div class="col-md-6">
+	  			<?php if (isset($error)): ?>
+	  				<div class="alert alert-danger"><?php echo $error; ?></div>
+	  			<?php endif; ?>
 				<div class="form-group">
 					<label for="photo"><strong>Photo</strong></label>
 					<div style="position:relative;">
 						<a class='btn btn-primary' href='javascript:;'>
 							Choose File...
-							<input type="file" accept="image/*" style='position:absolute;z-index:2;top:0;left:0;filter: alpha(opacity=0);-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";opacity:0;background-color:transparent;color:transparent;' name="file_source" size="40"  onchange='$("#upload-file-info").html($(this).val());'>
+							<input type="file" accept="image/*" style='position:absolute;z-index:2;top:0;left:0;filter: alpha(opacity=0);-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";opacity:0;background-color:transparent;color:transparent;' name="photo" size="40"  onchange='$("#upload-file-info").html($(this).val());'>
 						</a>
 						&nbsp;
 						<span class='label label-info' id="upload-file-info"></span>
@@ -86,7 +90,7 @@
 		      		</div>
 		      	</div>
 		      </div>
-      	</form>
+      	<?php echo form_close(); ?>
       </div>
     </div>
 </div>

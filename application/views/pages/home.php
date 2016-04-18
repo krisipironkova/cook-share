@@ -261,7 +261,7 @@
 			<div class="owl-carousel" data-plugin-options='{"items": 6, "autoplay": true, "autoplayTimeout": 2000}'>
 			<?php foreach($latest_recipes as $recipe) : ?>
 				<div>
-					<img class="img-responsive latest" src="<?php echo base_url()?>assets/img/burger.jpg" alt="">
+					<img class="img-responsive latest" src="<?php echo base_url() . 'assets/uploads/' . $recipe->photo; ?>" alt="">
 				</div>
 			<?php endforeach; ?>
 			</div>

@@ -19,7 +19,7 @@
 					<div class="col-md-4">
 							<div>
 								<span class="img-thumbnail">
-									<img alt="" class="img-responsive" src="<?php echo base_url()?>assets/img/burger.jpg" />
+									<img alt="" class="img-responsive" src="<?php echo base_url() . 'assets/uploads/' . $recipe->photo; ?>" />
 								</span>
 							</div>	
                     </div>		 

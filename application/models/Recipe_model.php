@@ -2,13 +2,13 @@
 
 class Recipe_model extends CI_Model {
 	private $table = 'recipe';
-	private $columns = 'id, user_id, title, description, ingredients, directions, prep_time, servings, cals';
+	private $columns = 'id, user_id, title, description, ingredients, directions, prep_time, servings, cals, photo';
 
-	public function set_recipe($info){
-
-		$info['user_id'] = $this->session->userdata('user_id');
-		unset($info['type']);
-		$this->db->insert($this->table, $info);
+	public function set_recipe($img){
+		$data = $this->input->post();
+		$data['photo'] = $img;
+		$data['user_id'] =  $this->session->userdata('user_id');
+		$this->db->insert($this->table, $data);
 	}
 
 	public function get_all($limit = null){
@@ -33,7 +33,7 @@ class Recipe_model extends CI_Model {
 
 	public function get_recipes_by_user_id($id){
 
-		$recipes = $this->db->where('user_id', $id)->get($this->table)->result();
+		$recipes = $this->db->where('user_id', $id)->order_by('id', 'desc')->get($this->table)->result();
 		return $recipes;
 	}
 }
