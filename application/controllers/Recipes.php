@@ -12,13 +12,14 @@ class Recipes extends CI_Controller{
     }
 
     public function my_recipes(){
-
+        if(!is_logged_in()) redirect('pages/home');
         $id = $this->session->userdata('user_id');
     	$this->data['my_recipes'] = $this->recipe_model->get_recipes_by_user_id($id);
         $this->layout->render('recipes/my_recipes');
     }
 
     public function recipe_form(){
+           if(!is_logged_in()) redirect('pages/home');
     	$this->layout->render('recipes/recipe_form');
     }
 

@@ -75,25 +75,29 @@
                     </div>
 				</div>
             	<hr class="tall" />
-            	<form  action="" method="post" enctype="multipart/form-data" id="comment_form">   
-					<h3 class="heading-primary"><i class="fa fa-comments"></i>Comments</h3>
-	                <div class="col-md-6">
-						<div class="row">
-							<div class="form-group">
-								<div class="col-md-12">
-									<input type="hidden" name="recipe_id" value="<?php echo $recipe->id ?>" />
-	                                <textarea rows="5" class="form-control" name="data" placeholder="Write your comment!"></textarea>
+            	<?php if(isset($user_info->username)): ?>
+	            	<form  action="" method="post" enctype="multipart/form-data" id="comment_form">   
+						<h3 class="heading-primary"><i class="fa fa-comments"></i>Comments</h3>
+		                <div class="col-md-6">
+							<div class="row">
+								<div class="form-group">
+									<div class="col-md-12">
+										<input type="hidden" name="recipe_id" value="<?php echo $recipe->id ?>" />
+		                                <textarea rows="5" class="form-control" name="data" placeholder="Write your comment!"></textarea>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="alert alert-success" style="display: none;"></div>
-								 <button type="submit" class="btn btn-lg btn-primary">Post Comment</button>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="alert alert-success" style="display: none;"></div>
+									 <button type="submit" class="btn btn-lg btn-primary">Post Comment</button>
+								</div>
 							</div>
-						</div>
-	                </div>
-	            </form>
+		                </div>
+		            </form>
+		        <?php else: ?>
+		        	<div class="col-md-6"><div class="alert alert-danger">Please <a href="<?=base_url('users/login')?>">log in</a> to comment!</div></div>
+		        <?php endif; ?>
 					<div class="col-md-6" id="comments">
 	                    <?php foreach($comments as $comment): ?>
 							<div class="testimonial testimonial-style-3">
