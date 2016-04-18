@@ -88,21 +88,19 @@
 						</div>
 						<div class="row">
 							<div class="col-md-12">
+								<div class="alert alert-success" style="display: none;"></div>
 								 <button type="submit" class="btn btn-lg btn-primary">Post Comment</button>
 							</div>
 						</div>
-	                </div>	
-					<div class="col-md-6">
-	                    
-						<div class="testimonial testimonial-style-3">
-							<blockquote>
-								<p></p>
-							</blockquote>
-							<div class="testimonial-arrow-down"></div>
-							<div class="testimonial-author">
-	              
+	                </div>
+	            </form>
+					<div class="col-md-6" id="comments">
+	                    <?php foreach($comments as $comment): ?>
+							<div class="testimonial testimonial-style-3">
+								<blockquote><p><?php echo $comment->data; ?></p></blockquote>
+								<div class="testimonial-arrow-down"></div>
+								<div class="testimonial-author"><?php echo $comment->username; ?></div>
 							</div>
-						</div>
+						<?php endforeach; ?>
 					</div>
-					</form>
 			</div>

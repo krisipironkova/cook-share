@@ -32,10 +32,27 @@ class Api extends REST_Controller {
             $this->login($this->post());
         }elseif($this->post('type') === 'form'){
             $this->set_recipe($this->post());
-        }elseif($this->post('type') === 'comment_form'){
-            $this->set_comment($this->post());
         }
 
+    }
+
+    public function comments_get() {
+         if(empty($id = $this->get('id'))){
+            $this->response(['status' => FALSE, 'message' => 'Select recipe id'], REST_Controller::HTTP_OK);
+        }else{
+            if($comments = $this->comment_model->get_comments($this->get('id'))){
+                $this->response($comments, REST_Controller::HTTP_OK);
+            }else{
+                $this->response([
+                    'status' => FALSE,
+                    'message' => 'No comments found'
+                ], REST_Controller::HTTP_NOT_FOUND);
+            }
+        }       
+    }
+
+    public function comments_post() {
+        $this->set_comment($this->post());
     }
 
     private function register($post) {
@@ -65,6 +82,8 @@ class Api extends REST_Controller {
 
     private function set_comment($post){
         $this->comment_model->set_comment($post);
-        $this->response(['status' => TRUE, 'message' => 'Comment posted successfully!']);
+        $this->response(['status' => TRUE, 'message' => 'Comment posted successfully!'], REST_Controller::HTTP_OK);
     }
+
+
 }

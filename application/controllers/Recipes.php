@@ -23,8 +23,9 @@ class Recipes extends CI_Controller{
     }
 
     public function recipe_view($id){
-
     	$this->data['recipe'] = $this->recipe_model->get_recipe($id);
+        $this->data['comments'] = $this->comment_model->get_comments($id);
 		$this->layout->render('recipes/recipe_view');
 	}
+
 }

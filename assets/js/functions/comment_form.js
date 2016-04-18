@@ -1,17 +1,26 @@
 $(document).ready(function(){
+
+	function updateComments(id) {
+		return $.get('http://localhost/cook-share/api/comments/', {
+			id: id,
+		});
+	}
+
 	$("#comment_form").validate({
 		rules:{
-			comment:{
-				required: true
+			data:{
+				required: true,
+				minlength: 5
 			}
 		}, messages:{
-			comment: "Please write a comment !"
+			data: {
+				required: "Please write a comment !",
+				minlength: "Minimum 5 characters!"
+			}
 		},
 		submitHandler: function(form){
 			var data = $(form).serializeArray();
-			data.push({name: 'type', value: 'comment_form'});
-		 	console.log(data);
-		 	$.ajax("http://localhost/cook-share/users/", {
+		 	$.ajax("http://localhost/cook-share/api/comments/", {
 				method: 'POST',
 				data: data,
 				dataType: 'json',
@@ -19,9 +28,15 @@ $(document).ready(function(){
 					switch(response.status) {
 						case true:
 							$('.alert.alert-success').css('display', 'block').text(response.message);
-							 window.setTimeout(function() {
-							    window.location.href = '/cook-share/recipes/my_recipes';
-							}, 1000);
+
+		 					updateComments(data[0].value).success(function(allComments) {
+		 						$('#comments').html('');
+		 						$("textarea[name='data']").val('');
+
+		 						$.each(allComments, function(comment) {
+		 							$('#comments').append('<div class="testimonial testimonial-style-3"><blockquote><p>'+allComments[comment].data+'</p></blockquote><div class="testimonial-arrow-down"></div><div class="testimonial-author">'+allComments[comment].username+'</div></div>');
+		 						});
+		 					});
 							break;
 						case false:
 							 $('.alert.alert-danger').css('display', 'block').text(response.message);
@@ -37,4 +52,6 @@ $(document).ready(function(){
 			});
 		}
 	});
+
+
 });
