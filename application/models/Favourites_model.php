@@ -35,4 +35,8 @@ class Favourites_model extends CI_Model{
 		$this->db->delete($this->table, $data);
 	}
 
+	public function get_all() {
+		return $this->db->select('recipe.title, recipe.id')->join('recipe', 'recipe.id = favourites.recipe_id')->where('favourites.user_id', $this->session->userdata('user_id'))->order_by('recipe.id', 'desc')->get('favourites')->result();
+	}
+
 }

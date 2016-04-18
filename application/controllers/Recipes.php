@@ -32,6 +32,11 @@ class Recipes extends CI_Controller{
 		$this->layout->render('recipes/recipe_view');
 	}
 
+    public function favourites() {
+        $this->data['favourites'] = $this->favourites_model->get_all();
+        $this->layout->render('recipes/favourites');
+    }
+
     public function add_to_favourites($id) {
         $this->favourites_model->add_to_favourites($id);
         redirect("recipes/recipe_view/{$id}");

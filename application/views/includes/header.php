@@ -120,7 +120,7 @@
 										</a>
 									</li>
 									<li>
-										<a href="#">
+										<a href="<?=base_url('recipes/favourites')?>">
 											Favourites
 										</a>
 									</li>
