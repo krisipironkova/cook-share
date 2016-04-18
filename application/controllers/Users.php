@@ -7,6 +7,7 @@ class Users extends CI_Controller{
 	}
 
 	public function register(){
+		if(is_logged_in()) redirect('pages/home');
 		$this->layout->render('users/register');
 	}
 
