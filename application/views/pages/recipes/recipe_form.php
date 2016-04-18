@@ -81,7 +81,7 @@
 	      		</div>
 		      	<div class="row">
 		      		<div class="col-md-12 text-right">
-		      			<button type="submit" name="submitRecipe" class="btn btn-lg btn-success">Create</button>
+		      			<button type="submit" class="btn btn-lg btn-success">Create</button>
 		      			<a href="<?=base_url('recipes/my_recipes')?>"  class="btn btn-lg btn-danger">Cancel</a>
 		      		</div>
 		      	</div>
