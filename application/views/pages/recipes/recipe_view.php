@@ -68,9 +68,11 @@
 							</li>
 						</ul>
                             <div class="dropdown" style="float:left;margin-right:4px;">
-                                  <button class="btn btn-success dropdown-toggle" type="button" id="dropdownLinks" data-toggle="dropdown">
-                                    <i class="fa fa-plus"></i> Add to favourites</span>
-                                  </button>
+                            	<?php if(!$in_favourites) : ?>
+                                  <a href="<?php echo base_url("recipes/add_to_favourites/{$recipe->id}");?>" class="btn btn-success btn-icon"><i class="fa fa-plus"></i>Add to favourites</a>
+                                <?php else : ?>
+                                	 <a href="<?php echo base_url("recipes/delete_from_favourites/{$recipe->id}");?>" class="btn btn-danger btn-icon"><i class="fa fa-trash"></i>Remove from favourites</a>
+                                <?php endif; ?> 
                             </div>
                     </div>
 				</div>
