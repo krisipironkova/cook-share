@@ -5,7 +5,7 @@ class Recipe_model extends CI_Model {
 	private $columns = 'id, user_id, title, description, ingredients, directions, prep_time, servings, cals, photo';
 
 	public function set_recipe($img){
-		
+
 		$data = $this->input->post();
 		$data['photo'] = $img;
 		$data['user_id'] =  $this->session->userdata('user_id');
@@ -48,5 +48,26 @@ class Recipe_model extends CI_Model {
 
 		$recipes = $this->db->where('user_id', $id)->order_by('id', 'desc')->get($this->table)->result();
 		return $recipes;
+	}
+
+	public function edit_recipe($id){
+
+		if (!empty($this->input->post('new_description')))
+            $data['description'] = $this->input->post('new_description');
+        if (!empty($this->input->post('new_directions')))
+            $data['directions'] = $this->input->post('new_directions');
+        if (!empty($this->input->post('new_title')))
+            $data['title'] = $this->input->post('new_title');
+        if (!empty($this->input->post('new_prep_time')))
+            $data['prep_time'] = $this->input->post('new_prep_time');
+        if (!empty($this->input->post('new_servings')))
+            $data['servings'] = $this->input->post('new_servings');
+        if (!empty($this->input->post('new_calss')))
+            $data['cals'] = $this->input->post('new_cals');
+        if (!empty($this->input->post('new_ingredients')))
+            $data['ingredients'] = $this->input->post('new_ingredients');
+        var_dump($data);
+
+        $this->db->update($this->table, $data, ['id' => $id]);
 	}
 }

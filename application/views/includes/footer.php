@@ -82,6 +82,7 @@
 	<script type="text/javascript" src="<?php echo base_url()?>assets/js/functions/login.js"></script>
 	<script type="text/javascript" src="<?php echo base_url()?>assets/js/functions/recipe_form.js"></script>
 	<script type="text/javascript" src="<?php echo base_url()?>assets/js/functions/comment_form.js"></script>
+	<script type="text/javascript" src="<?php echo base_url()?>assets/js/functions/edit_form.js"></script>
 
 </body>
 </html>

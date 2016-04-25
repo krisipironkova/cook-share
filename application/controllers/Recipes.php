@@ -70,4 +70,24 @@ class Recipes extends CI_Controller{
         $this->layout->render("recipes/edit_form");
     }
 
+    public function edit_recipe($id) {
+
+        if(!$this->recipe_model->exists_in_user_recipes($id))
+            redirect();
+
+            var_dump($this->recipe_model->exists_in_user_recipes($id));
+            if (!empty( $this->input->post( 'new_description' )) || 
+                !empty( $this->input->post( 'new_directions' )) ||
+                !empty( $this->input->post( 'new_title' )) || 
+                !empty( $this->input->post( 'new_prep_time' )) || 
+                !empty( $this->input->post( 'new_servings' )) || 
+                !empty( $this->input->post( 'new_cals' )) || 
+                !empty( $this->input->post( 'new_ingredients' )) 
+            ) $this->recipe_model->edit_recipe($id);
+
+            redirect("recipes/recipe_view/{$id}");
+        
+
+    }
+
 }

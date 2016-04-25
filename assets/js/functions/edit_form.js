@@ -1,70 +1,53 @@
 $(document).ready(function(){
-	$("#recipe_form").validate({
+	$("#edit_form").validate({
 		rules: {
-			photo: {
-				required: true
-			},
-			description: {
-				required: true,
+			new_description: {
 				minlength: 1
 			},
-			directions: {
-				required: true,
+			new_directions: {
 				minlength: 1
 			},
-			title: {
-				required: true,
+			new_title: {
 				minlength: 1
 			},
-			prep_time: {
-				required: true,
+			new_prep_time: {
 				number: true,
 				minlength: 1
 			},
-			servings: {
-				required: true,
+			new_servings: {
 				number: true,
 				minlength: 1
 			},
-			cals: {
-				required: true,
+			new_cals: {
 				number: true,
 				minlength: 1
 			},
-			ingredients: {
-				required: true,
+			new_ingredients: {
 				minlength: 1
 			}
 		},messages: {
-			description: {
-				required: "Please enter a description",
+			new_description: {
 				minlenght: "Please enter atleast 1 symbol"
 			},
-			directions: {
-				required: "Please enter directions",
+			new_directions: {
 				minlenght: "Please enter atleast 1 symbol"
 			},
-			title: {
-				required: "Please enter a title",
+			new_title: {
 				minlenght: "Please enter atleast 1 symbol"
 			},
-			prep_time: {
-				required: "Please enter a preparation time",
+			new_prep_time: {
 				number: "Please enter only numbers",
 				minlenght: "Please enter atleast 1 symbol"
 			},
-			servings: {
-				required: "Please enter number of servings",
+			new_servings: {
 				number: "Please enter only numbers",
 				minlenght: "Please enter atleast 1 symbol"
 			},
-			cals: {
-				required: "Please enter number of calories",
+			new_cals: {
 				number: "Please enter only numbers",
 				minlenght: "Please enter atleast 1 symbol"
 			},
-			ingredients: {
-				required: "Please enter ingredients",
+			new_ingredients: {
 				minlenght: "Please enter atleast 1 symbol"
 			}
 		}
