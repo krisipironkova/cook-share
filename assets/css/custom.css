@@ -21,6 +21,16 @@
 	font-size: 18px;
 }
 
+.my_recipes {
+	width: 180px;
+	height: 260px;
+}
+
+.my_recipes_image {
+	width: 140px;
+	height: 200px;
+}
+
 /* layout.css Style */
 .upload-drop-zone {
   height: 100px;
