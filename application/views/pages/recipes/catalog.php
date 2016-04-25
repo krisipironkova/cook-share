@@ -19,7 +19,7 @@
 				<?php foreach($recipes as $recipe) : ?>
 					<li class="col-md-3 col-sm-6 col-xs-12 product">
 						<span class="product-thumb-info catalog-box">
-							<a href="<?=base_url('recipes/recipe_view/'.$recipe->id)?>">
+							<a href="<?php echo base_url('recipes/recipe_view/'.$recipe->id);?>">
 								<span class="product-thumb-info-image">
 									<span class="product-thumb-info-act">
 										<span class="product-thumb-info-act-left"><em>View</em></span>

@@ -5,6 +5,7 @@ class Recipe_model extends CI_Model {
 	private $columns = 'id, user_id, title, description, ingredients, directions, prep_time, servings, cals, photo';
 
 	public function set_recipe($img){
+		
 		$data = $this->input->post();
 		$data['photo'] = $img;
 		$data['user_id'] =  $this->session->userdata('user_id');
@@ -23,6 +24,18 @@ class Recipe_model extends CI_Model {
 		if($result->num_rows() == 1){
 			return true;
 		}
+	}
+
+	public function exists_in_user_recipes($id) {
+
+		$array = array('id' => $id, 'user_id' => $this->session->userdata('user_id'));
+		$result = $this->db->where($array)->get($this->table);
+
+		if($result->num_rows() == 1){
+			return true;
+		}
+
+		return false;
 	}
 
 	public function get_recipe($id){

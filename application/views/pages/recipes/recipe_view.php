@@ -69,11 +69,20 @@
 						</ul>
                             <div class="dropdown" style="float:left;margin-right:4px;">
                             	<?php if(!$in_favourites) : ?>
-                                  <a href="<?php echo base_url("recipes/add_to_favourites/{$recipe->id}");?>" class="btn btn-success btn-icon"><i class="fa fa-plus"></i>Add to favourites</a>
+                            		<?php if(isset($user_info->username)): ?>
+                                  		<a href="<?php echo base_url("recipes/add_to_favourites/{$recipe->id}");?>" class="btn btn-success btn-icon"><i class="fa fa-plus"></i>Add to favourites</a>
+                                  	<?php else: ?>
+                                  		 <a href="<?php echo base_url("users/login");?>" class="btn btn-success btn-icon"><i class="fa fa-plus"></i>Add to favourites</a>
+                                  	<?php endif; ?>
                                 <?php else : ?>
                                 	 <a href="<?php echo base_url("recipes/delete_from_favourites/{$recipe->id}");?>" class="btn btn-danger btn-icon"><i class="fa fa-trash"></i>Remove from favourites</a>
                                 <?php endif; ?> 
                             </div>
+                            <?php if(isset($user_info->username)): ?>
+                            	<?php if($in_user_recipes) : ?>
+                            		<a href="<?php echo base_url("recipes/edit_form/{$recipe->id}");?>" class="btn btn-warning btn-icon"><i class="fa fa-pencil"></i>Edit</a>
+                            	<?php endif; ?>
+                        	<?php endif; ?>
                     </div>
 				</div>
             	<hr class="tall" />

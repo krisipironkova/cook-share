@@ -28,6 +28,7 @@ class Recipes extends CI_Controller{
     	$this->data['recipe'] = $this->recipe_model->get_recipe($id);
         $this->data['comments'] = $this->comment_model->get_comments($id);
         $this->data['in_favourites'] = $this->favourites_model->exists_in_favourites($id);
+        $this->data['in_user_recipes'] = $this->recipe_model->exists_in_user_recipes($id);
 
 
 		$this->layout->render('recipes/recipe_view');
@@ -61,6 +62,12 @@ class Recipes extends CI_Controller{
 
             $this->recipe_form();
         }
+    }
+
+    public function edit_form($id) {
+        if(!is_logged_in()) redirect('users/login');
+        $this->data['recipe'] = $this->recipe_model->get_recipe($id);
+        $this->layout->render("recipes/edit_form");
     }
 
 }
